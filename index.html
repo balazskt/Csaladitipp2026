@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Családi Foci Tippverseny</title>
+    
+    <script id="vb-data-block">
+        window.VB_DATA = {
+            players: [],
+            matches: [
+                // 1. Forduló
+                { id: 1, team1: "Mexikó", team2: "Dél-Afrika", act1: null, act2: null, predictions: {} },
+                { id: 2, team1: "Dél-Korea", team2: "Csehország", act1: null, act2: null, predictions: {} },
+                { id: 3, team1: "Kanada", team2: "Bosznia-Hercegovina", act1: null, act2: null, predictions: {} },
+                { id: 4, team1: "USA", team2: "Paraguay", act1: null, act2: null, predictions: {} },
+                { id: 5, team1: "Katar", team2: "Svájc", act1: null, act2: null, predictions: {} },
+                { id: 6, team1: "Brazília", team2: "Marokkó", act1: null, act2: null, predictions: {} },
+                { id: 7, team1: "Haiti", team2: "Skócia", act1: null, act2: null, predictions: {} },
+                { id: 8, team1: "Ausztrália", team2: "Törökország", act1: null, act2: null, predictions: {} },
+                { id: 9, team1: "Németország", team2: "Curaçao", act1: null, act2: null, predictions: {} },
+                { id: 10, team1: "Hollandia", team2: "Japán", act1: null, act2: null, predictions: {} },
+                { id: 11, team1: "Elefántcsontpart", team2: "Ecuador", act1: null, act2: null, predictions: {} },
+                { id: 12, team1: "Svédország", team2: "Tunézia", act1: null, act2: null, predictions: {} },
+                { id: 13, team1: "Szaúd-Arábia", team2: "Uruguay", act1: null, act2: null, predictions: {} },
+                { id: 14, team1: "Spanyolország", team2: "Zöld-foki Köztársaság", act1: null, act2: null, predictions: {} },
+                { id: 15, team1: "Irán", team2: "Új-Zéland", act1: null, act2: null, predictions: {} },
+                { id: 16, team1: "Belgium", team2: "Egyiptom", act1: null, act2: null, predictions: {} },
+                { id: 17, team1: "Franciaország", team2: "Szenegál", act1: null, act2: null, predictions: {} },
+                { id: 18, team1: "Irak", team2: "Norvégia", act1: null, act2: null, predictions: {} },
+                { id: 19, team1: "Argentína", team2: "Algéria", act1: null, act2: null, predictions: {} },
+                { id: 20, team1: "Ausztria", team2: "Jordánia", act1: null, act2: null, predictions: {} },
+                { id: 21, team1: "Ghána", team2: "Panama", act1: null, act2: null, predictions: {} },
+                { id: 22, team1: "Anglia", team2: "Horvátország", act1: null, act2: null, predictions: {} },
+                { id: 23, team1: "Portugália", team2: "Kongói DK", act1: null, act2: null, predictions: {} },
+                { id: 24, team1: "Üzbegisztán", team2: "Kolumbia", act1: null, act2: null, predictions: {} },
+                // 2. Forduló
+                { id: 25, team1: "Csehország", team2: "Dél-Afrika", act1: null, act2: null, predictions: {} },
+                { id: 26, team1: "Svájc", team2: "Bosznia-Hercegovina", act1: null, act2: null, predictions: {} },
+                { id: 27, team1: "Kanada", team2: "Katar", act1: null, act2: null, predictions: {} },
+                { id: 28, team1: "Mexikó", team2: "Dél-Korea", act1: null, act2: null, predictions: {} },
+                { id: 29, team1: "USA", team2: "Ausztrália", act1: null, act2: null, predictions: {} },
+                { id: 30, team1: "Skócia", team2: "Marokkó", act1: null, act2: null, predictions: {} },
+                { id: 31, team1: "Brazília", team2: "Haiti", act1: null, act2: null, predictions: {} },
+                { id: 32, team1: "Törökország", team2: "Paraguay", act1: null, act2: null, predictions: {} },
+                { id: 33, team1: "Hollandia", team2: "Svédország", act1: null, act2: null, predictions: {} },
+                { id: 34, team1: "Németország", team2: "Elefántcsontpart", act1: null, act2: null, predictions: {} },
+                { id: 35, team1: "Ecuador", team2: "Curaçao", act1: null, act2: null, predictions: {} },
+                { id: 36, team1: "Tunézia", team2: "Japán", act1: null, act2: null, predictions: {} },
+                { id: 37, team1: "Spanyolország", team2: "Szaúd-Arábia", act1: null, act2: null, predictions: {} },
+                { id: 38, team1: "Belgium", team2: "Irán", act1: null, act2: null, predictions: {} },
+                { id: 39, team1: "Uruguay", team2: "Zöld-foki Köztársaság", act1: null, act2: null, predictions: {} },
+                { id: 40, team1: "Új-Zéland", team2: "Egyiptom", act1: null, act2: null, predictions: {} }
+            ]
+        };
+    </script>
+
+    <style>
+        :root {
+            --primary: #c8102e;
+            --bg: #f4f4f9;
+            --text: #333;
+            --card-bg: #fff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 { color: var(--primary); margin-bottom: 5px; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover { background-color: #a00d24; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color: var(--primary); color: white; }
+        .hidden { display: none; }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        input[type="text"], input[type="number"] { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .match-card {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background: #fafafa;
+            border-left: 5px solid var(--primary);
+        }
+        .teams { font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #222; }
+        .prediction-badge {
+            background: #eef;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            margin: 3px 0;
+        }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 25px 0; }
+        .sync-box {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ffc107;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏆 2026 VB Családi Tippverseny 🏆</h1>
+        <div class="nav-buttons">
+            <button onclick="showView('leaderboard')">Ranglista & Tippek</button>
+            <button onclick="tryAdmin()">Admin Felület</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="leaderboard-view">
+            <h2>Játékosok és Pontszámok</h2>
+            <p style="background: #f8f9fa; padding: 10px; border-radius: 5px; font-size: 0.9em; border-left: 3px solid var(--primary);">
+                <b>Pontozás:</b> Telitalálat: <b>5p</b> | Győztes + pontos gólkülönbség: <b>3p</b> | Csak győztes/döntetlen iránya: <b>1p</b>
+            </p>
+            <table id="ranking-table">
+                <thead>
+                    <tr>
+                        <th>Helyezés</th>
+                        <th>Játékos</th>
+                        <th>Pontszám</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <hr>
+            <h3>📊 Lejátszott meccsek & Ki mit tippelt</h3>
+            <div id="public-played-matches"></div>
+        </div>
+
+        <div id="admin-view" class="hidden">
+            <h2>Adminisztráció</h2>
+            
+            <div class="sync-box">
+                <h3>🚀 Mentés GitHubra</h3>
+                <p>Ha végeztél a tippek rögzítésével vagy eredmények beírásával, kattints ide, majd cseréld le a GitHubon lévő <b>index.html</b> fájlt az új letöltöttel!</p>
+                <button onclick="downloadGithubHTML()" style="background-color: #212529;">Frissített index.html letöltése</button>
+            </div>
+
+            <div class="match-card">
+                <h3>👥 Új Játékos hozzáadása</h3>
+                <div class="form-group">
+                    <input type="text" id="new-player-name" placeholder="Játékos neve">
+                    <button onclick="addPlayer()">Hozzáadás</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <h3>⚽ Új Mérkőzés hozzáadása</h3>
+                <div class="form-group">
+                    <input type="text" id="new-match-team1" placeholder="Hazai csapat">
+                    <span>-</span>
+                    <input type="text" id="new-match-team2" placeholder="Vendég csapat">
+                    <button onclick="addMatch()">Mérkőzés felvitele</button>
+                </div>
+            </div>
+
+            <hr>
+            <h3>Mérkőzések kezelése, Tippek és Eredmények</h3>
+            <div id="admin-matches"></div>
+            
+            <button onclick="resetData()" style="background-color: #555; margin-top: 20px; width: 100%;">Minden lokális gyorsítótár törlése</button>
+        </div>
+    </div>
+
+    <script>
+        // Adatok inicializálása (Adminnál localstorage-ból, külső szemlélőnél a beágyazott VB_DATA-ból)
+        let players = JSON.parse(localStorage.getItem('vb26_players')) || window.VB_DATA.players || [];
+        let matches = JSON.parse(localStorage.getItem('vb26_matches')) || window.VB_DATA.matches || [];
+
+        // --- REJTETT JELSZÓ ELLENŐRZÉSE (jak@b2025) ---
+        function tryAdmin() {
+            let pwd = prompt("Kérlek, add meg az admin jelszót:");
+            // Titkos kód elrejtve ASCII kódok mögé (j, a, k, @, b, 2, 0, 2, 5)
+            const secret = [106, 97, 107, 64, 98, 50, 48, 50, 53];
+            
+            let isValid = pwd !== null && pwd.length === secret.length && 
+                          pwd.split('').every((char, i) => char.charCodeAt(0) === secret[i]);
+
+            if (isValid) {
+                showView('admin');
+                renderAdminMatches();
+            } else if (pwd !== null) {
+                alert("Helytelen jelszó!");
+            }
+        }
+
+        // Pontszámítás szabályai
+        function calculatePoints(pred1, pred2, act1, act2) {
+            if (pred1 == null || pred2 == null || act1 == null || act2 == null) return 0;
+            pred1 = parseInt(pred1); pred2 = parseInt(pred2);
+            act1 = parseInt(act1); act2 = parseInt(act2);
+
+            if (pred1 === act1 && pred2 === act2) return 5; 
+
+            let predDiff = pred1 - pred2;
+            let actDiff = act1 - act2;
+            
+            let predWinner = predDiff > 0 ? 1 : (predDiff < 0 ? -1 : 0);
+            let actWinner = actDiff > 0 ? 1 : (actDiff < 0 ? -1 : 0);
+
+            if (predWinner === actWinner) {
+                if (predDiff === actDiff) return 3; 
+                return 1; 
+            }
+            return 0;
+        }
+
+        function saveData() {
+            localStorage.setItem('vb26_players', JSON.stringify(players));
+            localStorage.setItem('vb26_matches', JSON.stringify(matches));
+            renderLeaderboard();
+            renderAdminMatches();
+        }
+
+        function showView(viewId) {
+            document.getElementById('leaderboard-view').classList.add('hidden');
+            document.getElementById('admin-view').classList.add('hidden');
+            document.getElementById(viewId + '-view').classList.remove('hidden');
+        }
+
+        function addPlayer() {
+            let name = document.getElementById('new-player-name').value.trim();
+            if (name === "" || players.some(p => p.name === name)) return;
+            players.push({ name: name });
+            document.getElementById('new-player-name').value = '';
+            saveData();
+        }
+
+        function addMatch() {
+            let t1 = document.getElementById('new-match-team1').value.trim();
+            let t2 = document.getElementById('new-match-team2').value.trim();
+            if (t1 === "" || t2 === "") return;
+            let newId = matches.length > 0 ? Math.max(...matches.map(m => m.id)) + 1 : 1;
+            matches.push({ id: newId, team1: t1, team2: t2, act1: null, act2: null, predictions: {} });
+            document.getElementById('new-match-team1').value = '';
+            document.getElementById('new-match-team2').value = '';
+            saveData();
+        }
+
+        function setMatchResult(matchId) {
+            let r1 = document.getElementById(`act1-${matchId}`).value;
+            let r2 = document.getElementById(`act2-${matchId}`).value;
+            let match = matches.find(m => m.id === matchId);
+            match.act1 = r1 !== "" ? parseInt(r1) : null;
+            match.act2 = r2 !== "" ? parseInt(r2) : null;
+            saveData();
+        }
+
+        function setPrediction(matchId, playerName) {
+            let p1 = document.getElementById(`pred1-${matchId}-${playerName}`).value;
+            let p2 = document.getElementById(`pred2-${matchId}-${playerName}`).value;
+            let match = matches.find(m => m.id === matchId);
+            if (p1 !== "" && p2 !== "") {
+                match.predictions[playerName] = { p1: parseInt(p1), p2: parseInt(p2) };
+            } else {
+                delete match.predictions[playerName];
+            }
+            saveData();
+        }
+
+        // --- GITHUB EXPORTÁLÁS (ÖNSÜTŐ MECHANIZMUS) ---
+        function downloadGithubHTML() {
+            // Mezők ürítése a tiszta kód érdekében
+            document.getElementById('new-player-name').value = '';
+            document.getElementById('new-match-team1').value = '';
+            document.getElementById('new-match-team2').value = '';
+
+            let fullHTML = "<!DOCTYPE html>\n<html lang=\"hu\">" + document.documentElement.innerHTML + "</html>";
+            
+            // Lecseréljük a beágyazott adatblokkot a jelenlegi állásra
+            let regex = /<script id="vb-data-block">([\s\S]*?)<\/script>/;
+            let newScriptContent = `\n        window.VB_DATA = {\n            players: ${JSON.stringify(players)},\n            matches: ${JSON.stringify(matches)}\n        };\n    `;
+            
+            fullHTML = fullHTML.replace(regex, `<script id="vb-data-block">${newScriptContent}<\/script>`);
+            
+            let blob = new Blob([fullHTML], { type: "text/html;charset=utf-8" });
+            let link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "index.html"; // Alapértelmezett név a GitHub Pages-hez
+            link.click();
+        }
+
+        function renderLeaderboard() {
+            let scores = {};
+            players.forEach(p => scores[p.name] = 0);
+
+            matches.forEach(m => {
+                if (m.act1 !== null && m.act2 !== null) {
+                    players.forEach(p => {
+                        if (m.predictions[p.name]) {
+                            scores[p.name] += calculatePoints(m.predictions[p.name].p1, m.predictions[p.name].p2, m.act1, m.act2);
+                        }
+                    });
+                }
+            });
+
+            let sorted = players.map(p => ({ name: p.name, score: scores[p.name] })).sort((a, b) => b.score - a.score);
+            let tbody = document.querySelector("#ranking-table tbody");
+            tbody.innerHTML = sorted.length === 0 ? "<tr><td colspan='3'>Nincsenek játékosok.</td></tr>" : "";
+            
+            sorted.forEach((p, i) => {
+                let medal = i === 0 ? "🥇 " : (i === 1 ? "🥈 " : (i === 2 ? "🥉 " : ""));
+                tbody.innerHTML += `<tr><td>${i + 1}.</td><td>${medal}${p.name}</td><td><strong>${p.score} pont</strong></td></tr>`;
+            });
+
+            // NYILVÁNOS TIPPEK MEGJELENÍTÉSE A LEJÁTSZOTT MECCSEKNÉL
+            let publicMatchesDiv = document.getElementById('public-played-matches');
+            publicMatchesDiv.innerHTML = "";
+            let playedMatches = matches.filter(m => m.act1 !== null && m.act2 !== null);
+
+            if (playedMatches.length === 0) {
+                publicMatchesDiv.innerHTML = "<p style='color:#777; font-style:italic;'>Még nincs lezárt mérkőzés.</p>";
+            } else {
+                playedMatches.forEach(m => {
+                    let card = document.createElement('div');
+                    card.className = 'match-card';
+                    card.style.borderLeft = "5px solid #28a745";
+                    
+                    let html = `<div class="teams">${m.team1} ${m.act1} - ${m.act2} ${m.team2}</div>`;
+                    players.forEach(p => {
+                        let pred = m.predictions[p.name];
+                        if (pred) {
+                            let pts = calculatePoints(pred.p1, pred.p2, m.act1, m.act2);
+                            let color = pts === 5 ? "🟢 5 pont (Telitalálat!)" : (pts === 3 ? "🟡 3 pont (Különbség)" : "⚪ 1 pont (Győztes)");
+                            html += `<div class="prediction-badge"><b>${p.name}:</b> Tippelt: ${pred.p1}-${pred.p2} ➔ <strong>${color}</strong></div>`;
+                        } else {
+                            html += `<div class="prediction-badge" style="color:#aaa;"><b>${p.name}:</b> Nem tippelt erre a meccsre.</div>`;
+                        }
+                    });
+                    card.innerHTML = html;
+                    publicMatchesDiv.appendChild(card);
+                });
+            }
+        }
+
+        function renderAdminMatches() {
+            let container = document.getElementById('admin-matches');
+            container.innerHTML = "";
+            matches.forEach(m => {
+                let div = document.createElement('div');
+                div.className = 'match-card';
+                let html = `
+                    <div class="teams">${m.team1} - ${m.team2}</div>
+                    <div class="form-group" style="background:#eef; padding:10px; border-radius:5px;">
+                        <label><b>Eredmény:</b></label>
+                        <input type="number" id="act1-${m.id}" value="${m.act1 !== null ? m.act1 : ''}" style="width:45px">
+                        <span>-</span>
+                        <input type="number" id="act2-${m.id}" value="${m.act2 !== null ? m.act2 : ''}" style="width:45px">
+                        <button onclick="setMatchResult(${m.id})" style="background-color:#28a745;">Mentés</button>
+                    </div>
+                `;
+                players.forEach(p => {
+                    let pred = m.predictions[p.name] || { p1: '', p2: '' };
+                    html += `
+                        <div class="form-group" style="margin-left:15px;">
+                            <span style="width:110px; display:inline-block;">${p.name}:</span>
+                            <input type="number" id="pred1-${m.id}-${p.name}" value="${pred.p1}" style="width:40px">
+                            <span>-</span>
+                            <input type="number" id="pred2-${m.id}-${p.name}" value="${pred.p2}" style="width:40px">
+                            <button onclick="setPrediction(${m.id}, '${p.name}')" style="background-color:#6c757d; padding:5px 10px; font-size:14px;">Tipp mentése</button>
+                        </div>
+                    `;
+                });
+                div.innerHTML = html;
+                container.appendChild(div);
+            });
+        }
+
+        function resetData() {
+            if(confirm("Biztos törlöd a böngésző gyorsítótárát? (A kódban elmentett dolgok megmaradnak)")) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        renderLeaderboard();
+    </script>
+</body>
+</html>
